@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+}
+
+.product{
+		border: solid;
+		display: flex;
+		border-width: 3px;
+		border-radius: 5%;
+		width: 90%;
+		align-items: center;
+		margin: 4px;
+		padding: 4px;
+		flex-direction: column;
+}
+
+
+footer{
+	display: flex;
+	flex-direction: row;
+}
+
+.social{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	width: 100%;
+	justify-content: space-around;
+	list-style: none;
+}
+ 
+.menu{
+	list-style: none;
+	background-color: #565656;
+	color: #fff;
+	margin: 0;
+	overflow: hidden;
+}
+
+.menu > li{
+	float: right;
+	padding: 1%;
+}
+
+.logo{
+	width: 10%;
+}
+
+/* MOBILE*/
+@media( max-width: 599px){
+	header, main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	h1{
+	 	font-size: 20px;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.hamburger{
+		margin-left: auto;
+		margin-right: 0;
+		color: #fff;
+	}
+
+	.navbar{
+		display: flex;
+		background-color: #565656;
+	}
+}
+
+/* TABLET */
+@media(min-width: 600px) and (max-width: 990px){
+	header{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		margin: 0;
+	}
+
+	main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	h1{
+	 	font-size: 20px;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.hamburger{
+		margin-left: auto;
+		margin-right: 0;
+		color: #fff;
+	}
+
+	.navbar{
+		display: flex;
+		background-color: #565656;
+	}
+}
+
+/* WEB */
+@media(min-width: 991px){
+	header{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+
+	main{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	h1{
+	 	font-size: 20px;
+	}
+
+	.menu{
+		display: flex;
+		align-items: flex-end;
+		float: right;
+		margin-right: 0;
+		margin-left: auto;
+	}
+
+	.hamburger{
+		display: none;
+	}
+
+	.product{
+  		margin: 20px 10px;
+  		padding: 5px;
+  	}
+
+	.navbar{
+		display: flex;
+		align-items: flex-end;
+	}
+}
